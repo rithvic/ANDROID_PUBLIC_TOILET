@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/list_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/banner_icon"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#ffffff">
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@drawable/quad_logo"
+            android:scaleType="centerInside"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/drawer_list"
+        android:layout_below="@+id/banner_icon"
+        android:layout_width="wrap_content"
+        android:background="@color/list_background"
+        android:choiceMode="singleChoice"
+        android:divider="@null"
+        android:listSelector="@drawable/list_selector"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

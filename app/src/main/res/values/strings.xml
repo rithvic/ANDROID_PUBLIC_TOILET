@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Public Toilet</string>
+    <string name="layout">layout</string>
+
+    <!-- AdMob ad unit IDs -->
+    <string name="banner_home_footer">ca-app-pub-8724235786287942~3857248563</string>
+    <string name="todo">TODO</string>
+    <string name="not_available">Not Available</string>
+    <string name="zoom_and_pick_the_location_to_add_new_toilet">Zoom and pick the location to add new Toilet</string>
+</resources>

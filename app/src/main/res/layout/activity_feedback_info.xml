@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#dcdcdc">
+
+    <include layout="@layout/toolbar"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="200dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/notavailablegray"
+        android:id="@+id/feed_image"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Details"
+        android:textStyle="italic"
+        android:textColor="@color/list_background"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:padding="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/screen_title"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:text="Screen        :"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/screen_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="1dp"
+            android:text="Not Available"
+            android:layout_toEndOf="@+id/screen_title"
+            android:textSize="18sp"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/summary_title"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:text="Summary   :"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/summary_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:paddingBottom="1dp"
+            android:text="Not Available"
+            android:layout_toEndOf="@+id/summary_title"
+            android:textSize="18sp"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/suggestion_title"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:text="Suggestion:"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/suggestion_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:paddingBottom="1dp"
+            android:text="Not Available"
+            android:layout_toEndOf="@+id/suggestion_title"
+            android:textSize="18sp"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:text="Screen:"
+            android:paddingStart="10dp"
+            android:textColor="@color/colorBlack"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/screen_text"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:text="Not Available"
+            android:paddingBottom="1dp"
+            android:background="@drawable/line_border"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Summary:"
+        android:paddingStart="10dp"
+        android:textColor="@color/colorBlack"/>
+
+    <TextView
+        android:id="@+id/summary_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Not Available"
+        android:paddingStart="10dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Suggestion:"
+        android:paddingStart="10dp"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/suggestion_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Not Available"
+        android:paddingStart="10dp"
+        android:gravity="center"
+        />-->
+
+</LinearLayout>

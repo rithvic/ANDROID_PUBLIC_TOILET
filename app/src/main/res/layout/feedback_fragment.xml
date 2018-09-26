@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <include layout="@layout/toolbar" android:id="@+id/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Screen:"
+                android:fontFamily="sans-serif"
+                android:textSize="15sp"
+                android:padding="5dp"
+                android:textColor="@color/Black"/>
+
+            <Spinner
+                android:id="@+id/screen_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="center"
+                android:theme="@style/ThemeSpinner"/>
+
+            <View
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Error Summary:"
+                android:fontFamily="sans-serif"
+                android:textSize="15sp"
+                android:padding="5dp"
+                android:textColor="@color/Black"/>
+
+            <EditText
+                android:id="@+id/summary_text"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:minLines="6"
+                android:gravity="start"
+                android:maxLines="10"
+                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:scrollbars="vertical"
+                android:background="@drawable/bg"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <!--<TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Error Description:"
+                android:fontFamily="sans-serif"
+                android:textSize="15sp"
+                android:padding="5dp"
+                android:textColor="@color/Black"/>
+
+            <EditText
+                android:id="@+id/desc_text"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:minLines="6"
+                android:gravity="start"
+                android:maxLines="10"
+                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:scrollbars="vertical"
+                android:background="@drawable/bg"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"/>-->
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Attach the Screenshot (if any):"
+                android:fontFamily="sans-serif"
+                android:textSize="15sp"
+                android:padding="5dp"
+                android:textColor="@color/Black"/>
+
+            <ImageView
+                android:id="@+id/screenshot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/addimage"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Suggestions:"
+                android:fontFamily="sans-serif"
+                android:textSize="15sp"
+                android:padding="5dp"
+                android:textColor="@color/Black"/>
+
+            <EditText
+                android:id="@+id/suggestion_text"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:minLines="6"
+                android:gravity="start"
+                android:maxLines="10"
+                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:scrollbars="vertical"
+                android:background="@drawable/bg"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <Button
+                android:layout_marginTop="5dp"
+                android:id="@+id/submit_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textSize="30sp"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

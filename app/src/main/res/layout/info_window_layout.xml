@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/layout_border_with_transparent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="Toilet Info"
+        android:textColor="@color/Black"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:padding="5dp"
+        android:textSize="15sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/meter_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="3dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/placeholder" />
+
+        <TextView
+            android:id="@+id/distance_text"
+            android:layout_toRightOf="@+id/meter_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:textColor="#F44336"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="Rating:"
+            android:paddingLeft="5dp"
+            android:textSize="15sp"
+            android:gravity="center_vertical"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:progressTint="@color/Icon_Blue" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/driving_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Driving Direction"
+        android:textAllCaps="false"
+        android:layout_margin="5dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="0.5dp"
+        android:background="@color/Black" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp">
+            <Button
+                android:id="@+id/cancelbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Delete"
+                android:textAllCaps="false"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="22sp"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/Black"
+            />
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp">
+            <Button
+                android:id="@+id/okbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@android:color/transparent"
+                android:text="Info"
+                android:textAllCaps="false"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="22sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

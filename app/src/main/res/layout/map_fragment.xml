@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:id="@+id/hole_layout">
+
+    <include layout="@layout/toolbar" android:id="@+id/toolbar"/>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/changetype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MapType"
+                android:textAllCaps="false"
+                android:drawableLeft="@drawable/maptype"
+                android:textColor="@color/Black"
+                />
+            <Button
+                android:id="@+id/searchlocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:textAllCaps="false"
+                android:drawableLeft="@drawable/searchlocation"
+                android:textColor="@color/Black"
+                />
+        </LinearLayout>
+
+    </fragment>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6.5"/>
+
+        <LinearLayout
+            android:id="@+id/list_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/Edit_logo"
+                    android:text=""
+                    android:paddingLeft="5dp"
+                    android:textSize="15sp"/>
+
+                <RelativeLayout
+                    android:layout_below="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/meter_icon"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="3dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/placeholder" />
+
+                    <TextView
+                        android:id="@+id/distance_text"
+                        android:layout_toRightOf="@+id/meter_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_centerVertical="true"
+                        android:textSize="15sp"
+                        android:textColor="#F44336"/>
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/Edit_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:text="Delete"
+                    android:background="@drawable/button_bachground"
+                    android:textColor="#FFFFFF"
+                    android:textAllCaps="false"
+                    android:layout_marginRight="10dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:text="Rating:"
+                    android:paddingLeft="5dp"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"/>
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:progressTint="@color/Icon_Blue" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>-->
+
+</LinearLayout>

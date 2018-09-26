@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/internetcheck"
+    android:background="@drawable/layout_border">
+
+    <com.lusfold.spinnerloading.SpinnerLoading
+        android:id="@+id/loading_ring"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_marginBottom="50dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#457fca"
+        android:textSize="18sp"
+        android:text="Please wait.." />
+
+    <LinearLayout
+        android:id="@+id/phone_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/location_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Needs location enable"
+            android:textColor="#457fca"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/settings_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/windowBackground"
+            android:text="Settings"
+            android:textAllCaps="false"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/app_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/app_location_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="App needs permission"
+            android:textColor="#457fca"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/app_settings_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/windowBackground"
+            android:text="Allow"
+            android:textAllCaps="false"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/internet_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please check your Internet connection"
+        android:textSize="18sp"
+        android:textColor="#457fca"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"/>
+
+
+    <Button
+        android:id="@+id/internetRetry"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/windowBackground"
+        android:gravity="center"
+        android:text="Internet Setting"
+        android:textAllCaps="false"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="20sp" />
+
+</LinearLayout>
